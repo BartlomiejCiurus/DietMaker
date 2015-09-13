@@ -1,3 +1,28 @@
 //
    Created by Bartek on 13.09.2015.
 
+extends layout
+block content
+    div(id='header')
+       div
+          div(id='navigation')
+             div
+                ul
+                   li(class='current')
+                     a(href='/main') Home
+                   li(class='current')
+                      a(href='/main') View Diet
+                   li(class='current')
+                      a(href='/main') Add Product
+    div(id='content')
+       div(id='section')
+          div
+             h1 Welcome #{user}!
+             p This website is designed for you to help you with creating fully professional diet. Just for you! Try it now.
+             span
+               a(class='first' href='/view') View diet
+               a(href='/create') Add product
+          div(id='figure')
+             img(src='images/Healthy-Eating-Girl.jpg' alt='img')
+             span
+          span(class='background')

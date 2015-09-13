@@ -25,7 +25,7 @@ router.post('/register', function (req, res, next) {
             break;
         case 3:
             saveUser(user);
-            res.render('login',{errorBlock: 'Account created!'})
+            res.render('index',{errorBlock: 'Account created!'})
             break;
     }
 });
@@ -59,9 +59,11 @@ var saveUser = function (user) {
     newUser.appendChild(passwordNode);
     newUser.appendChild(emailNode);
 
+    console.log('Registering new user: ' + newUser);
     xmlData.documentElement.appendChild(newUser);
 
-    fs.writeFileSync('../dataBase/users.xml', xml);
+    console.log('Saving: ' + xmlData);
+    fs.writeFileSync('../dataBase/users.xml', xmlData);
 };
 
 var validateRegister = function (user, repeatedPassword){

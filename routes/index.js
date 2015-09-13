@@ -10,7 +10,7 @@ router.get('/login', function (req, res, next) {
 router.post('/login', function (req, res, next) {
     var user = new User(req.body.username, req.body.password);
     if (isUserExists(user) != -1) {
-        res.redirect('/main', user);
+        res.render('main', {user: user.getUsername()});
     }
     else {
         res.render('index', {errorBlock: 'Invalid login or password. Try again!' })
@@ -43,6 +43,5 @@ var isUserExists = function (user) {
 var isPasswordCorrect = function (password, user) {
     return password == user.getPassword();
 };
-
 
 module.exports = router;
