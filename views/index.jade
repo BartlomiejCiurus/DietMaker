@@ -8,6 +8,7 @@ block content
             div Diet
                 span Maker
         form(method="post" action="/login")
+            span(class='errorBlock') #{errorBlock}
             input(type='text' placeholder='username' name='username')
             input(type='password' placeholder='password' name='password')
             input(type='submit' value='Login' class='loginBut')

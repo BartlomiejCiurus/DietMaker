@@ -4,17 +4,18 @@
 extends layout
 
 block content
-   div.body
-   div.grad
-   div.login
-      div.header
-         div Diet
-            span Maker
-      form(method="post" action="/register")
-         input(type='text' placeholder='username' name='username')
-         input(type='email' placeholder='email' name='email')
-         input(type='password' placeholder='password' name='password')
-         input(type='password' placeholder='reapeat password' name='repeatedPassword')
-         input(type='submit' value='Sign up')
-      form(method='post' action='/backToLogin')
-         input(type='submit' value='Back to login')
+    div.body
+    div.grad
+    div.login
+        div.header
+            div Diet
+                span Maker
+        form(method="post" action="/register")
+            span(class='errorBlock') #{errorBlock}
+            input(type='text' placeholder='username' name='username')
+            input(type='email' placeholder='email' name='email')
+            input(type='password' placeholder='password' name='password')
+            input(type='password' placeholder='reapeat password' name='repeatedPassword')
+            input(type='submit' value='Sign up')
+        form(method='post' action='/backToLogin')
+            input(type='submit' value='Back to login')

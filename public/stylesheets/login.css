@@ -1,91 +1,99 @@
 @import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
 
-
-body{
-	font-family: Arial, serif;
-	font-size: 12px;
+body {
+    font-family: Arial, serif;
+    font-size: 12px;
 }
 
-.body{
-	position: fixed;
-	top: -20px;
-	left: -20px;
-	right: -40px;
-	bottom: -40px;
-	background-image: url("http://localhost:3000/images/background.jpg");
+.body {
+    position: fixed;
+    top: -20px;
+    left: -20px;
+    right: -40px;
+    bottom: -40px;
+    background-image: url("http://localhost:3000/images/background.jpg");
 }
 
-.header{
-	position: absolute !important;
-	top: calc(50% - 130px) !important;
-	left: calc(50% - 120px) !important;
+.header {
+    position: absolute !important;
+    top: calc(50% - 130px) !important;
+    left: calc(50% - 120px) !important;
 }
 
-.header div{
-	float: left !important;
-	color: #fff !important;
-	font-family: 'Exo', sans-serif !important;
-	font-weight: 400 !important;
-	font-size: 35px !important;
+.header div {
+    float: left !important;
+    color: #fff !important;
+    font-family: 'Exo', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 35px !important;
 }
 
-.header div span{
-	color: chartreuse !important;
+.header div span {
+    color: chartreuse !important;
 }
 
-.login{
-	position: absolute;
-	top: calc(50% - 125px);
-	left: calc(50% - 450px);
-	height: 150px;
-	width: 350px;
-	padding: 10px;
+.login {
+    position: absolute;
+    top: calc(50% - 125px);
+    left: calc(50% - 450px);
+    height: 150px;
+    width: 350px;
+    padding: 10px;
 }
 
-.login input[type=text]{
-	width: 250px;
-	height: 30px;
-	background: transparent;
-	border: 1px solid rgba(255,255,255,0.6);
-	border-radius: 2px;
-	color: #fff;
-	font-family: 'Exo', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	padding: 4px;
+.login input[type=text] {
+    width: 250px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
 }
 
-.login input[type=password], input[type=email]{
-	width: 250px;
-	height: 30px;
-	background: transparent;
-	border: 1px solid rgba(255,255,255,0.6);
-	border-radius: 2px;
-	color: #fff;
-	font-family: 'Exo', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	padding: 4px;
-	margin-top: 10px;
+.login span[class='errorBlock'] {
+    font-family: 'Exo', sans-serif;
+    left: calc(50% - 450px);
+    font-size: 16px;
+    font-weight: 400;
+    color: greenyellow;
+    text-align: center !important;
 }
 
-.login input[type=submit], input[type=button]{
-	width: 260px;
-	height: 35px;
-	background: #fff;
-	border: 1px solid #fff;
-	cursor: pointer;
-	border-radius: 2px;
-	color: #a18d6c;
-	font-family: 'Exo', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	padding: 6px;
-	margin-top: 10px;
+.login input[type=password], input[type=email] {
+    width: 250px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
+    margin-top: 10px;
 }
 
-::-webkit-input-placeholder{
-	text-align: center;
-   color: rgba(255,255,255,0.6);
+.login input[type=submit], input[type=button] {
+    width: 260px;
+    height: 35px;
+    background: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    color: #a18d6c;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 10px;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
 }
