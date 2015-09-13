@@ -1,0 +1,20 @@
+//
+   Created by Bartek on 12.09.2015.
+
+extends layout
+
+block content
+   div.body
+   div.grad
+   div.login
+      div.header
+         div Diet
+            span Maker
+      form(method="post" action="/register")
+         input(type='text' placeholder='username' name='username')
+         input(type='email' placeholder='email' name='email')
+         input(type='password' placeholder='password' name='password')
+         input(type='password' placeholder='reapeat password' name='repeatedPassword')
+         input(type='submit' value='Sign up')
+      form(method='post' action='/backToLogin')
+         input(type='submit' value='Back to login')
